@@ -1,0 +1,83 @@
+### Swift ###
+# Xcode
+#
+# участники gitignore: не забудьте обновить Global/Xcode.gitignore, Objective-C.gitignore и Swift.gitignore
+
+## Настройки пользователя
+xcuserdata/
+
+## совместимость с Xcode 8 и более ранними версиями (игнорирование не требуется начиная с Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## совместимость с Xcode 3 и более ранними версиями (игнорирование не требуется начиная с Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Специфично для Obj-C/Swift
+*.hmap
+
+## Упаковка приложения
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Игровые площадки
+timeline.xctimeline
+playground.xcworkspace
+
+# Менеджер пакетов Swift
+# Добавьте эту строку, если вы хотите избежать проверки исходного кода зависимостей менеджера пакетов Swift.
+# Пакеты/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+# Xcode автоматически создает этот каталог с файлом .xcworkspacedata и xcuserdata
+# поэтому он не нужен, если только вы не добавили в свой проект файл конфигурации пакета
+# .swiftpm
+
+.build/
+
+# CocoaPods
+# Мы не рекомендуем добавлять каталог Pods в ваш файл .gitignore. Однако
+# вы должны сами решить, стоит ли это делать, плюсы и минусы описаны по адресу:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# Pods/
+# Добавьте эту строку, если вы хотите избежать проверки исходного кода из рабочей области Xcode
+# *.xcworkspace
+
+# Carthage
+# Добавьте эту строку, если вы хотите избежать проверки исходного кода зависимостей Carthage.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Управление зависимостями Accio
+Dependencies/
+.accio/
+
+# fastlane
+# Рекомендуется не хранить скриншоты в репозитории git.
+# Вместо этого используйте fastlane для повторного создания скриншотов по мере необходимости.
+# Для получения дополнительной информации о рекомендуемой настройке посетите:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Внедрение кода
+# После установки новых инструментов внедрения кода создается папка /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
