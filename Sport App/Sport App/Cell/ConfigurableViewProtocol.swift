@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol ConfigurableViewProtocol {
+    associatedtype ConfigurableModel
+    func configure(with model: ConfigurableModel)
+}
