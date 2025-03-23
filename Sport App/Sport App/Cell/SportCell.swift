@@ -50,19 +50,6 @@ class SportCell: UICollectionViewCell {
     }
 }
 
-//private extension SportCell {
-//    func setupViews() {
-//        [nameLabel, typeLabel, muscleLabel, equipmentLabel, difficultyLabel, instructionsLabel].forEach {
-//            addSubview($0)
-//        }
-//    }
-//    func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//            
-//            ])
-//    }
-//}
-
 // MARK: - ConfigurableViewProtocol
 extension SportCell: ConfigurableViewProtocol {
     func configure(with model: SportMainModel) {
